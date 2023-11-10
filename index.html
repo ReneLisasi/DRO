@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="map" style="height: 400px;"></div>
+    <input type="text" id="radius" placeholder="Enter radius (in meters)">
+    <button id="findServices">Find Emergency Services</button>
+    <input type="hidden" id="clickedLocation">
+
+    <!-- Add a div to display the clicked coordinates -->
+    <div id="coordinatesDisplay"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    <!-- Add this script tag in your HTML file -->
+    
+
+</body>
+</html>
